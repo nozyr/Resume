@@ -1,0 +1,227 @@
+%!TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Yurui}{Zhou}{ \urlstyle{same}\href{http://yuruiz.com}{yuruiz.com}
+\href{mailto:yuruiz@ece.cmu.edu}{|yuruiz@ece.cmu.edu} | 412-352-6225
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Carnegie Mellon Univ}
+\descript{MS in Electrical Computer Engineering}
+\location{Expected May 2015 | Pittsburgh, PA \\ Cum. GPA: 3.5}
+\sectionsep
+
+\subsection{Tsinghua Univ}
+\descript{BS in Mechanical Engineering}
+\location{July 2013 | Beijing, China}
+\location{ Cum. GPA: 87.45 / 100}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/nozyr}{\bf nozyr} \\
+LinkedIn://  \href{https://www.linkedin.com/in/yuruiz/}{\bf yuruiz} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Machine Learning \\
+Distributed System \\
+Computer Architecture \\
+Network Security \\
+Wireless Network \\
+\sectionsep
+
+\subsection{Undergraduate}
+Operating Systems \\
+Design Circuit System + Practicum\\
+Computer Hardware Technology \\
+Data Structure \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\descript{Over 5000 lines:}
+C \textbullet{} Shell \textbullet{} Python \\
+\descript{Over 1000 lines:}
+C++ \textbullet{} \LaTeX\\
+\descript{Familiar:}
+Assembly \textbullet{} Javascript
+\sectionsep
+
+\subsection{Software}
+\descript{Proficient:}
+Cadence \textbullet{} ProE  \\
+\descript{Familiar:}
+Matlab \textbullet{} AutoCAD
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Vestibular Sensing\&Postural Stability Monitoring}
+\descript{Collaborative Innovation Research Center|Research Assistant}
+\location{Feb 2014 – August 2014 | Pittsburgh, PA}
+\content{The goal of this project is a behaviorally transparent postural monitoring device with wireless data collection capability and a user-friendly posture stability and balance health dashboard that will empower seniors and their healthcare providers to prevent falls and avoid traumatic injuries.}
+
+\begin{tightemize}
+\vspace{\topsep}
+\item Circuit design, assembly and functional testing (lab and field) of the wearable\\ \hspace{-.6cm} inertial measurement system.
+\item Firmware Programming and integration of Bluetooth Low Energy.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Mine Tunnel Sensor Network}
+\descript{Cui Tianhong Research Group| Engineer}
+\location{Jan 2013 – Dec 2013 | Beijing, China}
+\content{The goal of this project is a robust sensor network inside mine tunnel to help the tunnel manager to learn the position and status of workers in real time and to assist rescue operation in case of emergency such as tunnel collapse.}
+\begin{tightemize}
+\item Circuit design and assembly of the sensor network sink/slave node.
+\item Sink node and slave node software firmware developing.
+\item Implemented the localization algorithm and self organization algorithm.
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Secured Bitcoins Loans}
+\descript{Head Graduate Research}
+\location{Jan 2014 – May 2014 | Beijing, China}
+% \begin{tightemize}
+\content{Proposed a solution to minimize trust needed in secured loans using a peer-to-peer bitcoin contract.}
+% \end{tightemize}
+\begin{tightemize}
+\item Collateral architecture and protocol design.
+\item Designed and implemented the distributed contract program based on\\  \hspace{-.6cm} bitcoin protocol
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Campus Wide Express delivery Lockers}
+\descript{Head Undergraduate Research}
+\location{Jan 2012 – Apr 2013 | Beijing, China}
+\content{This project propose a campus-wide solution to the problem of express delivery problem within campus by providing express delivery lockers through out the campus. The locker is integrated with the delivery tracking system so that the client would be able to check the location and availability of lockers.}
+\begin{tightemize}
+\item Design the lockers architecture to enable remote control and monitor.
+\item Develop the locker program to enable customer identity generation.
+\end{tightemize}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\begin{tabular}{rll}
+2012	 & 1\textsuperscript{st}/300  & Tsinghua Campus Enhancement competition 2012\\
+2012	 & top 2\textsuperscript{nd}/200  & Beijing Mechanical Design Competition\\
+2012	 & top 2\textsuperscript{st}/150  & Tsinghua Challenge Cup 2012\\
+2010	 & top 2\textsuperscript{st}/60   & Tsinghua Mechanical Design Competition 2010\\
+2008	 & top 3\textsuperscript{st}/700  & National Physics competition\\
+2007	 & 1\textsuperscript{st}/60       & International Robot Olympiad\\
+2007 	 & 1\textsuperscript{st}/80 	  & National Robot Olympiad of senior high school\\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
