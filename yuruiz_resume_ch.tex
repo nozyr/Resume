@@ -1,0 +1,236 @@
+%!TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-ch}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{周}{宇睿}{ \urlstyle{same}\href{http://yuruiz.com}{yuruiz.com}
+\href{mailto:yuruizhou@gmail.com}{|yuruizhou@gmail.com} | 15210590819
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{教育}
+
+\subsection{卡内基梅隆大学}
+\content{电气计算机工程硕士}
+\location{毕业日期：2014年12月 \\ 学分绩: 3.5 / 4.0}
+\sectionsep
+
+\subsection{清华大学}
+\content{微机电系统工程学士}
+\location{毕业日期：2013年7月}
+\location{ 学分绩: 87.45 / 100}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{链接}
+Github:// \href{https://github.com/yuruiz}{\bf yuruiz} \\
+LinkedIn://  \href{https://www.linkedin.com/in/yuruiz/}{\bf yuruiz} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{课程}
+
+\subsection{研究生}
+15619-云计算 \\
+15641-计算机网络 \\
+15640-分布式系统\\
+18648-实时嵌入式系统\\
+18649-分布式嵌入式系统\\
+18731-网络安全 \\
+18759-无线网络 \\
+10701-机器学习 \\
+18740-计算机体系结构 \\
+\sectionsep
+
+\subsection{本科}
+数据结构 \\
+操作系统 \\
+计算机硬件基础 \\
+电工电子技术\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{技能}
+\subsection{编程语言}
+\descript{Over 10000 lines:}
+C \textbullet{} Python \\
+\descript{Over 1000 lines:}
+Java\\
+\sectionsep
+
+\subsection{软件}
+\descript{精通:}
+Cadence \textbullet{} ProE \textbullet{} \LaTeX  \\
+\descript{熟练:}
+Matlab \textbullet{} AutoCAD
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{个人经历}
+
+\runsubsection{前庭传感器研发以及姿态稳定性监测}
+\descript{卡内基梅隆大学|助理研究员}
+\location{01/2014 – 08/2014 电气计算机工程系| 匹兹堡，美国}
+\content{在这个项目中，我们研发出一个无线轻量的身体姿态稳定性检测系统。这套系统\\ 
+利用我们自己研发的前庭传感器对老年人进行姿势稳定性监测，并向穿戴者提供\\ 
+实时语音提醒，防止跌倒伤害的发生。}
+
+\begin{tightemize}
+\vspace{.4cm}
+\item 电路设计，集成微控制器、无线蓝牙模块以及惯性传感器。
+\item 电路组装以及无线惯性传感系统测试。
+\item 嵌入式软件开发以及实时数据采集。
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{矿山物联网}
+\descript{清华大学, 精密仪器系| 工程师}
+\location{01/2013 – 12/2013 | 北京， 中国}
+\content{这个项目的目标是研发一套具有高度鲁棒性的矿上无线网络系统，用以帮助实时\\
+定位工人位置，并在发生矿难时协助救援行动及时定位受困工人。}
+
+\begin{tightemize}
+\vspace{.2cm}
+\item 电路设计，集成微控制器以及大功率无线天线。
+\item 嵌入式软件开发，实现动态自组网以及网络管理。
+\item 实现无线传感网络实时定位算法。
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{项目}
+\runsubsection{基于比特币的智能财产协议}
+\location{01/2014 – 05/2014 | 匹兹堡, 美国}
+% \begin{tightemize}
+\content{在这个项目中，我们提出了一个基于比特币协议的匿名合同协议框架。该框架允许\\
+在买方在没有第三方担保的情况下实现分期付款，同时将卖房需承担的风险最小化。}
+% \end{tightemize}
+\begin{tightemize}
+\item 交易过程设计以及协议框架设计。
+\item 设计基于比特币的分布式交易框架程序。
+\item 实现该分布式交易框架并成功将无担保分析付款协议发布至比特币网络。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{校园物流自提柜}
+\location{01/2013 – 04／2013 | 北京, 中国}
+\content{在这个项目中，我们提供了一个针对校园快递最后一公里难题的解决方案。}
+\begin{tightemize}
+\item 物流自提柜设计，实现远程控制和监测功能。
+\item 设计并实现物流自提柜工作流程。
+\item 嵌入式软件开发，实现客户身份认证。
+\end{tightemize}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{获奖}
+\begin{tabular}{rll}
+2012	 & 1\textsuperscript{st}/300  & 清华大学校园优化大赛特等奖\\
+2012	 & 2\textsuperscript{nd}/200  & 北京高校机械设计大赛二等奖\\
+2012	 & 2\textsuperscript{nd}/150  & 清华大学挑战杯二等奖\\
+2010	 & 2\textsuperscript{nd}/60   & 清华大学机械设计大赛二等奖\\
+2008	 & 3\textsuperscript{rd}/700  & 全国物理竞赛三等奖\\
+2007	 & 1\textsuperscript{st}/60       & 国际机器人奥林匹克一等奖\\
+2007 	 & 1\textsuperscript{st}/80 	  & 全国机器人奥林匹克一等奖\\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}

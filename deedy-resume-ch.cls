@@ -1,5 +1,5 @@
 % Intro Options
-\ProvidesClass{deedy-resume}[2014/04/30 CV class]
+\ProvidesClass{deedy-resume-ch}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{
@@ -27,8 +27,8 @@
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Color=primary]{Helvetica Light}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica Neue UltraLight}
+\setmainfont[Color=primary]{Lantinghei SC Extralight}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Lantinghei SC Extralight}
 
 % Date command
 \setlength{\TPHorizModule}{1mm}
@@ -44,8 +44,8 @@ Last Updated on
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec{Helvetica Neue UltraLight}\fontsize{40pt}{10cm}\selectfont #1
-		\fontspec{Helvetica Neue Light}\selectfont #2
+		\fontspec{STXihei}\fontsize{40pt}{10cm}\selectfont #1
+		\fontspec{STXihei}\selectfont #2
 	} \\
 	\vspace{5pt}
 	\centering{ \color{headings}\fontspec{Heiti TC Medium}\fontsize{11pt}{14pt}\selectfont #3}
@@ -56,31 +56,26 @@ Last Updated on
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\fontspec{Helvetica Light}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\fontspec{Lantinghei SC Extralight}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
-\titleformat{\subsection}{\color{subheadings}\raggedright
-\fontspec{Helvetica}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\titleformat{\subsection}{\color{subheadings}
+\fontspec{Lantinghei SC Demibold}\fontsize{12pt}{10pt}\selectfont\bfseries\uppercase}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
-
-\titleformat{\subsubsection}{\color{subheadings}\raggedright
-\fontspec{Helvetica}\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
-\newcommand{\runsubsection}[1]{\color{subheadings}\raggedright
-\fontspec{Helvetica}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\newcommand{\runsubsection}[1]{\color{subheadings}
+\fontspec{Lantinghei SC Demibold}\fontsize{12pt}{10pt}\selectfont\bfseries\uppercase {#1 \\} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\fontspec{Heiti SC Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
-\newcommand{\content}[1]{\color{subheadings}\fontspec{Helvetica}\selectfont {#1 \\} \normalfont}
+\newcommand{\content}[1]{\color{subheadings}\raggedright\fontspec{Heiti SC Light}\fontsize{10pt}{10pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
-\newcommand{\location}[1]{\color{headings}\raggedright\fontspec{Heiti TC Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+\newcommand{\location}[1]{\color{headings}\raggedright\fontspec{Heiti SC Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 % Section seperators command
 \newcommand{\sectionsep}[0]{\vspace{8pt}}
 
-\newcommand{\subsectionsep}{\vspace{4pt}}
-
 % Bullet Lists with fewer gaps command
-\newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+\newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep0pt \parskip0pt \parsep0pt \itemindent-.5cm \leftmargini=-1cm}{\end{itemize}\vspace{-\topsep}}

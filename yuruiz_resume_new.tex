@@ -45,7 +45,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[]{deedy-resume}
+\documentclass[]{deedy-resume-new}
 
 \begin{document}
 
@@ -71,91 +71,27 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
 
-\subsection{Carnegie Mellon Univ}
-\subsectionsep
-\descript{Pittsburgh, PA | Dec 2014}
-\content{MS in Electrical Computer Engineering}
-\location{Cum. GPA: 3.43 / 4.0}
+\runsubsection{Carnegie Mellon Univ}
+\descript{| MS in Electrical Computer Engineering}
+\location{Pittsburgh, PA | Dec 2014 \textbullet{} Cum. GPA: 3.43 / 4.0}
 \sectionsep
 
-\subsection{Tsinghua Univ}
-\subsectionsep
-\descript{Beijing, China | July 2013}
-\content{BS in Mechanical Engineering}
-\location{Cum. GPA: 87.45 / 100}
+\runsubsection{Tsinghua Univ}
+\descript{| BS in Mechanical Engineering}
+\location{Beijing, China | July 2013 \textbullet{} Cum. GPA: 87.45 / 100}
 \sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Coursework}
-
-\subsection{Graduate}
-\subsectionsep
-Cloud Computing \\
-Computer Network \\
-Network Security \\
-Wireless Network \\
-Machine Learning \\
-Distributed System \\
-Computer Architecture \\
-Embedded Realtime System \\
-Distributed Embedded System \\
-\sectionsep
-
-\subsection{Undergraduate}
-\subsectionsep
-Data Structure \\
-Operating Systems \\
-Computer Hardware Technology \\
-Circuit System Design + Practicum\\
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Programming}
-\subsectionsep
-\descript{Over 10000 lines:}
-C \textbullet{} Python \textbullet{} Java \\
-\subsectionsep
-\descript{Over 5000 lines:}
-C++ \textbullet{} C\#\\
-\subsectionsep
-\subsection{Development}
-\subsectionsep
-\descript{Proficient:}
-Android \textbullet{} Xamarin \textbullet{} Embedded System  \\
-\subsectionsep
-\descript{Familiar:}
-Compiler
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.66\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Objective
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Objective}
-\content{I'd rather play a crucial and flexible role in a small, agile and stressful team than work as replaceable gear in a established giant one. I don't want to repeat myself day by day and am looking for opportunities that expose me to interdisciplinary challenges. I love building stuff from scratch, solving problems all the way through and growing up with the product.}
+\content{I'd rather play a crucial and flexible role in a small, agile and stressful team than work as replaceable gear in a established giant one. I don't want to repeat myself day by day and am looking for opportunities that expose me to interdisciplinary challenges. I love building stuff from scratch, solving problems all the way t\itemindent-.5cmhrough and growing up with the product.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -164,7 +100,6 @@ Compiler
 
 \subsubsection{Software Engineer | Microsoft Band}
 \location{Oct 2015 – Now | Redmond, WA}
-\vspace{\topsep}
 \begin{tightemize}
 \item Microsoft Health Platform: Design and implemented the Android side feature to provide a better user experience  across Microsoft Band, Microsoft Health Cloud and Microsoft Health Android App. 
 \item Microsoft Band Firmware: Design and implemented new Microsoft Band feature to improve user experience and boost market performance
@@ -202,18 +137,18 @@ Compiler
 %     RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects}
-
-\runsubsection{Bitcoin Smart Property}
-\descript{Head Graduate Research}
-\location{Jan 2014 – May 2014 | Pittsburgh, PA}
-\content{In this project we proposed a solution to minimize trust needed in secured loans and property managing using a peer-to-peer bitcoin contract.}
-\begin{tightemize}
-\item Designed the transaction process and protocol.
-\item Designed the distributed contract program based on bitcoin protocol.
-\item Implemented the distributed contract program and published the contract blocks to bitcoin network.
-\end{tightemize}
-\sectionsep
+%\section{Projects}
+%
+%\runsubsection{Bitcoin Smart Property}
+%\descript{Head Graduate Research}
+%\location{Jan 2014 – May 2014 | Pittsburgh, PA}
+%\content{A solution to minimize trust needed in secured loans and property managing using a peer-to-peer bitcoin contract.}
+%\begin{tightemize}
+%\item Designed the transaction process and protocol.
+%\item Designed the distributed contract program based on bitcoin network protocol.
+%\item Implemented the distributed contract program and published the contract blocks to bitcoin network
+%\end{tightemize}
+%\sectionsep
 
 %\runsubsection{Campus Wide Express delivery Lockers}
 %\descript{Head Undergraduate Research}
@@ -227,6 +162,30 @@ Compiler
 
 %\sectionsep
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\begin{minipage}[t]{.6\textwidth}
+\subsection{Programming}
+\descript{Over 10000 lines:}
+C \textbullet{} Python \textbullet{} Java \\
+\descript{Over 5000 lines:}
+C++ \textbullet{} C\#\\
+\sectionsep
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.35\textwidth}
+
+\subsection{Software}
+\descript{Proficient:}
+Cadence \textbullet{} ProE \textbullet{} \LaTeX  \\
+\descript{Familiar:}
+Matlab \textbullet{} AutoCAD
+\sectionsep
 
 \end{minipage}
 \end{document}  \documentclass[]{article}
